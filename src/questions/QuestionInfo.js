@@ -16,6 +16,7 @@ class QuestionInfo extends React.Component {
     
 
     componentDidMount() {
+        console.log(process.env.REACT_APP_KEY)
         axios.get(`https://api.stackexchange.com/2.2/questions/${this.props.id}?order=desc&sort=activity&site=stackoverflow&filter=!LYA)NcjxVO1mgxq*)Lp_Eq&key=${process.env.REACT_APP_KEY}`)
         .then(response => {
             console.log(response.data)
