@@ -24,7 +24,7 @@ class GetUsers extends React.Component {
     }
 
     getQuestion() {
-        axios.get(`https://api.stackexchange.com/2.2/users?&site=stackoverflow&filter=!0Z-LvgkIiS)pY6ZMtsOr_tRsP&key=${process.env.REACT_APP_KEY}${this.props.filterMethod}`)
+        axios.get(`https://api.stackexchange.com/2.2/users?&site=stackoverflow&filter=!0Z-LvgkIiS)pY6ZMtsOr_tRsP&key=HFW32iJzXLrJwqyL5HF2fg((${this.props.filterMethod}`)
         .then(response => {
             this.setState({
                 resultApi: response.data.items});
@@ -66,7 +66,7 @@ class GetTags extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`https://api.stackexchange.com/2.2/users/${this.props.id}/top-tags?site=stackoverflow&key=${process.env.REACT_APP_KEY}`)
+        axios.get(`https://api.stackexchange.com/2.2/users/${this.props.id}/top-tags?site=stackoverflow&key=HFW32iJzXLrJwqyL5HF2fg((`)
         .then(response => {
             this.setState({
                 resultApi: response.data.items});

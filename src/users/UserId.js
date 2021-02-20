@@ -21,7 +21,7 @@ class UserInfo extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`https://api.stackexchange.com/2.2/users/${this.props.id}?&site=stackoverflow&filter=!--1nZuvlSU9X&key=${process.env.REACT_APP_KEY}`)
+        axios.get(`https://api.stackexchange.com/2.2/users/${this.props.id}?&site=stackoverflow&filter=!--1nZuvlSU9X&key=HFW32iJzXLrJwqyL5HF2fg((`)
         .then(response => {
             this.setState({
                 resultApi: response.data.items
