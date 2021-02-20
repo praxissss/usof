@@ -11,7 +11,8 @@ class TagWiki extends React.Component {
 
     componentDidMount() {
         let name = encodeURIComponent(this.props.name)
-        axios.get(`https://api.stackexchange.com/2.2/tags/${name}/wikis?&site=stackoverflow&key=${process.env.REACT_APP_KEY}`)
+        axios.get(`https://api.stackexchange.com/2.2/tags/${name}/wikis?&site=stackoverflow&key=HFW32iJzXLrJwqyL5HF2fg((
+            `)
         .then(response => {
             this.setState({
                 resultApi: response.data.items
