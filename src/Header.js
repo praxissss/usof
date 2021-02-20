@@ -18,11 +18,10 @@ class Header extends React.Component {
         return (
             <header>
                 <div className="label">
-                        <span><b>usof</b></span>
+                        <span><NavLink to="/"><b>usof</b></NavLink></span>
                 </div>
                 <input type='search' placeholder='Search...'/>
                 <nav>
-                    <li><NavLink to="/">Main</NavLink></li>
                     <li><NavLink to="/users">Users</NavLink></li>
                     <li><NavLink to="/tags">Tags</NavLink></li> 
                 </nav>
